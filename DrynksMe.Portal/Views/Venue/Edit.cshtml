@@ -1,0 +1,42 @@
+﻿@model DrynksMe.Portal.Models.VenueModel
+
+@{
+    ViewBag.Title = "Add";
+}
+<div>
+    @CustomHtml.VenueNavPill(this)
+</div>
+<hgroup class="title">
+    <h2>Edit venues</h2>
+</hgroup>
+<p>
+    This is where you edit Venues.
+</p>
+<div class="row" id="resultDiv" style="display: none">
+        <div id="messageDiv" class="span4 alert" >
+           
+        </div>
+</div>
+
+<div class="form-horizontal well">
+     <div class="row">
+        @using (Html.BeginForm("Edit","Venue",FormMethod.Post,new {@id="EditVenueForm"})) {
+            @Html.AntiForgeryToken()
+            @Html.ValidationSummary(true)
+            <div class="span12">
+                @Html.HiddenFor(model => model.Id)
+                @Html.HiddenFor(model => model.CreateDt)
+                @Html.Partial("_VenueFormFields")
+                <div class="control-group">
+                    <div class="controls">
+                        <input id="editBtnForVenue" class="btn btn-primary" type="submit" value="Save" />
+                    </div>
+                </div>
+            </div>
+        }
+     </div>
+</div>
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/customSite")
+}

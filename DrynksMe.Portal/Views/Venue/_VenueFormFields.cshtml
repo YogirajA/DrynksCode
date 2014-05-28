@@ -1,0 +1,205 @@
+﻿@model DrynksMe.Portal.Models.VenueModel
+
+
+<div class="control-group">
+    @Html.LabelFor(model => model.VenueName,new {@class="control-label"})
+    <div class="controls">
+        @Html.EditorFor(model => model.VenueName)
+        @Html.ValidationMessageFor(model => model.VenueName)
+    </div>
+</div>
+
+
+<div class="control-group">
+    @Html.LabelFor(model => model.ProfileName,new {@class="control-label"})
+    <div class="controls">
+        @Html.EditorFor(model => model.ProfileName)
+        @Html.ValidationMessageFor(model => model.ProfileName)
+    </div>
+</div>
+
+<div class="control-group">
+    @Html.LabelFor(model => model.VenueType,new {@class="control-label"})
+    <div class="controls">
+        @Html.TextAreaFor(model => model.VenueType,1,10,new{@class="input-xxlarge"})
+        @Html.ValidationMessageFor(model => model.VenueType)
+    </div>
+
+</div>
+
+<div class="control-group">
+    @Html.LabelFor(model => model.Description,new {@class="control-label"})
+    <div class="controls">
+        @Html.TextAreaFor(model => model.Description,12,10,new{@class="input-xxlarge"})
+        @Html.ValidationMessageFor(model => model.Description)
+    </div>
+</div>
+
+
+<div class="control-group">
+    @Html.LabelFor(model => model.ShortVenueInformation,new {@class="control-label"})
+    <div class="controls">
+        @Html.TextAreaFor(model => model.ShortVenueInformation,1,10,new{@class="input-xxlarge"})
+        @Html.ValidationMessageFor(model => model.ShortVenueInformation)
+    </div>
+</div>
+
+    
+<div class="control-group">
+    @Html.LabelFor(model => model.ImageSmall,new {@class="control-label"})
+    <div class="controls">
+        @Html.TextAreaFor(model => model.ImageSmall,1,10,new{@class="input-xxlarge"})
+        @Html.ValidationMessageFor(model => model.ImageSmall)
+    </div>
+</div>
+
+    
+<div class="control-group">
+    @Html.LabelFor(model => model.ImageMedium,new {@class="control-label"})
+    <div class="controls">
+        @Html.TextAreaFor(model => model.ImageMedium,1,10,new{@class="input-xxlarge"})
+        @Html.ValidationMessageFor(model => model.ImageMedium)
+    </div>
+</div>
+
+    
+<div class="control-group">
+    @Html.LabelFor(model => model.ImageLarge,new {@class="control-label"})
+    <div class="controls">
+        @Html.TextAreaFor(model => model.ImageLarge,1,10,new{@class="input-xxlarge"})
+        @Html.ValidationMessageFor(model => model.ImageLarge)
+    </div>
+</div>
+
+
+<div class="control-group">
+    @Html.LabelFor(model => model.Location,new {@class="control-label"})
+    <div class="controls">
+        @Html.EditorFor(model => model.Location)
+        @Html.ValidationMessageFor(model => model.Location)
+    </div>
+</div>
+
+
+<div class="control-group">
+    @Html.LabelFor(model => model.City,new {@class="control-label"})
+    <div class="controls">
+        @Html.EditorFor(model => model.City)
+        @Html.ValidationMessageFor(model => model.City)
+    </div>
+</div>
+
+        
+<div class="control-group">
+    @Html.LabelFor(model => model.State,new {@class="control-label"})
+    <div class="controls">
+        @Html.EditorFor(model => model.State)
+        @Html.ValidationMessageFor(model => model.State)
+    </div>
+</div>
+
+
+<div class="control-group">
+    @Html.LabelFor(model => model.Zip,new {@class="control-label"})
+    <div class="controls">
+        @Html.EditorFor(model => model.Zip)
+        @Html.ValidationMessageFor(model => model.Zip)
+    </div>
+</div>
+
+<div class="control-group">
+    @Html.LabelFor(model => model.Longitude,new {@class="control-label"})
+    <div class="controls">
+        @Html.EditorFor(model => model.Longitude)
+        @Html.ValidationMessageFor(model => model.Longitude)
+    </div>
+</div>
+
+<div class="control-group">
+    @Html.LabelFor(model => model.Latitude,new {@class="control-label"})
+    <div class="controls">
+        @Html.EditorFor(model => model.Latitude)
+        @Html.ValidationMessageFor(model => model.Latitude)
+    </div>
+</div>
+
+        
+<div class="control-group">
+    @Html.LabelFor(model => model.AddressInfo,new {@class="control-label"})
+    <div class="controls">
+        @Html.EditorFor(model => model.AddressInfo)
+        @Html.ValidationMessageFor(model => model.AddressInfo)
+    </div>
+</div>
+
+        
+<div class="control-group">
+    @Html.LabelFor(model => model.TwitterHandle,new {@class="control-label"})
+    <div class="controls">
+        @Html.TextAreaFor(model => model.TwitterHandle,1,10,null)
+        @Html.ValidationMessageFor(model => model.TwitterHandle)
+    </div>
+
+</div>
+
+    
+<div class="control-group">
+    @Html.LabelFor(model => model.Email,new {@class="control-label"})
+    <div class="controls">
+        @Html.TextAreaFor(model => model.Email,1,10,new{@class="input-xlarge"})
+        @Html.ValidationMessageFor(model => model.Email)
+    </div>
+</div>
+
+
+<div class="control-group">
+    @Html.LabelFor(model => model.IsActive,new {@class="control-label"})
+    <div class="controls">
+        @Html.CheckBoxFor(model => model.IsActive)
+    </div>
+</div>
+
+ 
+<div class="control-group">
+    @Html.LabelFor(model => model.Website,new {@class="control-label"})
+    <div class="controls">
+        @Html.TextAreaFor(model => model.Website,1,10,new{@class="input-xlarge"})
+        @Html.ValidationMessageFor(model => model.Website)
+    </div>
+</div>
+
+
+<div class="control-group">
+    @Html.LabelFor(model => model.PrimaryContact,new {@class="control-label"})
+    <div class="controls">
+        @Html.EditorFor(model => model.PrimaryContact)
+        @Html.ValidationMessageFor(model => model.PrimaryContact)
+    </div>
+</div>
+
+
+<div class="control-group">
+    @Html.LabelFor(model => model.ContactNumber,new {@class="control-label"})
+    <div class="controls">
+        @Html.EditorFor(model => model.ContactNumber)
+        @Html.ValidationMessageFor(model => model.ContactNumber)
+    </div>
+</div>
+
+
+<div class="control-group">
+    @Html.LabelFor(model => model.CustomerNumber,new {@class="control-label"})
+    <div class="controls">
+        @Html.EditorFor(model => model.CustomerNumber)
+        @Html.ValidationMessageFor(model => model.CustomerNumber)
+    </div>
+</div>
+
+<div class="control-group">
+    @Html.LabelFor(model => model.MerchantTypes,new {@class="control-label"})
+    <div class="controls">
+        @CustomHtml.CheckBoxList(Model.MerchantTypes,"MerchantTypeIds")
+        @Html.ValidationMessageFor(model => model.CustomerNumber)
+    </div>
+</div>
+

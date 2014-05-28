@@ -1,0 +1,41 @@
+﻿@using System.Linq.Expressions
+@using System.Web.Mvc
+@using DrynksMe.Portal.Models
+@using Microsoft.Web.Mvc.Html
+@helper VenueNavPill(WebViewPage page)
+{
+    <ul class="nav nav-pills">
+        @{
+            var actionName = Path.GetFileNameWithoutExtension(page.VirtualPath);
+             
+         }
+        <li class="@(actionName=="Index"?"active":"")">
+            @page.Html.ActionLink("Venue Home","Index","Venue")
+        </li>
+        <li class="@(actionName=="AllVenues"?"active":"")">
+            <a href="@page.Url.Action("AllVenues","Venue",routeValues:null)">All</a>   
+        </li>
+        <li class="@(actionName=="Search"?"active":"")">
+            <a href="@page.Url.Action("Search","Venue",routeValues:null)">Search</a>   
+        </li>
+        <li class="@(actionName=="Add"?"active":"")">
+            <a href="@page.Url.Action("Add","Venue",routeValues:null)">Add</a>
+        </li>
+    </ul>
+}
+
+@helper CheckBoxList(IEnumerable<System.Web.Mvc.SelectListItem> items, string name)
+{
+    foreach (var selectedItem in items)
+    {
+        <label class="checkbox">
+            <input type="checkbox" name="@name" value="@selectedItem.Value" checked="@selectedItem.Selected"/> 
+            @selectedItem.Text
+        </label><br/>
+    }
+}
+@helper ControlLabel(WebViewPage page,Expression<Func<VenueSearchModel, string>> propertySelector)
+{
+     //@page.Html.Label(propertySelector)
+    //.LabelFor(propertySelector,new{@class="control-label"})
+}

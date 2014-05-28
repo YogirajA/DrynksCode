@@ -1,0 +1,41 @@
+﻿@model IEnumerable<DrynksMe.Portal.Models.VenueModel>
+<table class="table table-bordered table-striped table-condensed table-hover">
+    <thead>
+        <tr>
+            <th>
+               Venue Name
+            </th>
+            <th>
+                Profile Name
+            </th>
+            <th>
+                Location
+            </th>
+            <th>
+               Website
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model) {
+            <tr>
+                <td data-title="Venue Name">
+                    <div>@item.VenueName</div>
+                </td>
+                <td data-title="Profile Name">
+                    <div>@item.ProfileName</div>
+                </td>
+                <td data-title="Location">
+                    <div>@item.Location</div>
+                </td>
+                <td data-title="Website">
+                    <div>@item.Website</div>
+                </td>
+                <td data-title="Edit">
+                    <div>@Html.ActionLink("Edit", "Edit", new { id=item.Id }) </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

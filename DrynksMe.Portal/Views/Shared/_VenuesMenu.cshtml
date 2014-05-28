@@ -1,0 +1,20 @@
+﻿
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+    Venues
+    <b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+    <li>
+        @Html.ActionLink("Venue Home","Index","Venue")
+    </li>
+     <li>
+        <a href="@Url.Action("AllVenues","Venue",routeValues:null)">All</a>   
+    </li>
+    <li>
+        <a href="@Url.Action("Search","Venue",routeValues:null)">Search</a>   
+    </li>
+    <li>
+        <a href="@Url.Action("Add","Venue",routeValues:null)">Add</a>
+    </li>
+   
+</ul>

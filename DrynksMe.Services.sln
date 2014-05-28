@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrynksMe.Services", "DrynksMe.Services\DrynksMe.Services\DrynksMe.Services.csproj", "{80ABCD1B-7831-4546-B17C-6B5E2ADF961C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrynksMe.DataAccess", "DrynksMe.DataAccess\DrynksMe.DataAccess.csproj", "{DA9D85A3-8E70-44B4-8B27-CB3694AA6217}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrynksMes.Services.Tests", "DrynksMes.Services.Tests\DrynksMes.Services.Tests.csproj", "{941F4545-4014-416D-953E-6941D12D5AFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrynksMe.Services.Api", "DrynksMe.Services.Api\DrynksMe.Services.Api\DrynksMe.Services.Api.csproj", "{4BCFE573-D650-4C53-8777-30F29DA465F0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{8D321882-FD6D-42ED-8D50-3599BA87B080}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrynksMe.Portal", "DrynksMe.Portal\DrynksMe.Portal.csproj", "{26D4D34F-D879-4C74-805B-26865AF2FD78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrynksMe.Common", "DrynksMe.Common\DrynksMe.Common.csproj", "{9497866C-9D65-4E94-9ADB-00349F3FE723}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrynksMe.SecurityHelper", "DrynksMe.SecurityHelper\DrynksMe.SecurityHelper.csproj", "{743C584C-3FDC-4622-864C-C8348595BE4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80ABCD1B-7831-4546-B17C-6B5E2ADF961C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80ABCD1B-7831-4546-B17C-6B5E2ADF961C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80ABCD1B-7831-4546-B17C-6B5E2ADF961C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80ABCD1B-7831-4546-B17C-6B5E2ADF961C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA9D85A3-8E70-44B4-8B27-CB3694AA6217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA9D85A3-8E70-44B4-8B27-CB3694AA6217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA9D85A3-8E70-44B4-8B27-CB3694AA6217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA9D85A3-8E70-44B4-8B27-CB3694AA6217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{941F4545-4014-416D-953E-6941D12D5AFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{941F4545-4014-416D-953E-6941D12D5AFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{941F4545-4014-416D-953E-6941D12D5AFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{941F4545-4014-416D-953E-6941D12D5AFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BCFE573-D650-4C53-8777-30F29DA465F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BCFE573-D650-4C53-8777-30F29DA465F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BCFE573-D650-4C53-8777-30F29DA465F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BCFE573-D650-4C53-8777-30F29DA465F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26D4D34F-D879-4C74-805B-26865AF2FD78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D4D34F-D879-4C74-805B-26865AF2FD78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D4D34F-D879-4C74-805B-26865AF2FD78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D4D34F-D879-4C74-805B-26865AF2FD78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9497866C-9D65-4E94-9ADB-00349F3FE723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9497866C-9D65-4E94-9ADB-00349F3FE723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9497866C-9D65-4E94-9ADB-00349F3FE723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9497866C-9D65-4E94-9ADB-00349F3FE723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{743C584C-3FDC-4622-864C-C8348595BE4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{743C584C-3FDC-4622-864C-C8348595BE4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{743C584C-3FDC-4622-864C-C8348595BE4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{743C584C-3FDC-4622-864C-C8348595BE4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

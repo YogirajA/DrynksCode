@@ -1,0 +1,15 @@
+﻿@model IEnumerable<DrynksMe.Portal.Models.VenueModel>
+
+@{
+    ViewBag.Title = "title";
+}
+
+<div>
+    <div>
+         @CustomHtml.VenueNavPill(this)
+    </div>
+    <hgroup class="title">
+        <h2>All venues from Drynks</h2>
+    </hgroup>
+    @Html.Partial("_ListOfVenues")
+</div>
